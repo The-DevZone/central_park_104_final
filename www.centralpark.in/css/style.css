@@ -10468,3 +10468,162 @@ button.acceptedds {
 		padding-left: 10px;
 	}
 }
+
+
+
+/* plan floor */
+/* 🔹 Section Base */
+.floorplan-section {
+  padding: 80px 20px;
+  background: #fafafa;
+  text-align: center;
+  padding: 60px;
+}
+
+.floorplan-heading-wrapper {
+  margin-bottom: 50px;
+}
+
+.floorplan-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+  position: relative;
+font-family: Optima !important					;
+font-size: 40px;
+font-weight: 700;
+line-height: normal;
+color: rgb(34, 34, 34);
+}
+
+.floorplan-heading::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #c49a4a, #e8c97a);
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 3px;
+}
+
+/* 🔹 Grid Layout */
+.floorplan-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* 🔹 Each Item */
+.floorplan-item {
+  position: relative;
+  width: 320px;
+  max-width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.floorplan-item:hover {
+  transform: translateY(-6px);
+}
+
+/* 🔹 Image Wrapper */
+.floorplan-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.floorplan-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+  filter: blur(3px) brightness(80%);
+}
+
+/* On Hover — Blur reduces slightly */
+.floorplan-item:hover .floorplan-image {
+  filter: blur(2px) brightness(90%);
+  transform: scale(1.05);
+}
+
+/* 🔹 Center Button */
+.floorplan-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(90deg, #c49a4a, #e8c97a);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 15px;
+  opacity: 0;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Button visible on hover */
+.floorplan-item .floorplan-btn {
+  opacity: 1;
+}
+
+/* Hover Effect on Button */
+.floorplan-btn:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+  background: linear-gradient(90deg, #b88a3b, #d8b868);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 992px) {
+  .floorplan-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .floorplan-heading {
+    font-size: 2rem;
+  }
+
+  .floorplan-item {
+    width: 90%;
+  }
+
+  .floorplan-btn {
+    font-size: 14px;
+    padding: 10px 22px;
+  }
+}
+
+
+
+.contact-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+
+.contact-btn-wrap h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+
+.mainwrap .testimonialsection {
+    width: 100%;
+    float: left;
+    position: relative;
+    background: #f8f4f0;
+    margin-bottom: 30px;
+}

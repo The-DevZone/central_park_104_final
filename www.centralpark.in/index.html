@@ -163,6 +163,10 @@
                                         <span>&nbsp;</span>
                                         <strong><a href="#Locationss">Location</a></strong>
                                     </div>
+                                    <div class="innernavbar d-none">
+                                        <span>&nbsp;</span>
+                                        <strong><a href="#Locationss">Plan</a></strong>
+                                    </div>
 
 
                                     <div class="innernavbar">
@@ -706,7 +710,7 @@
                             </div>
                             <div class="itemg">
                                 <div class="hostextwrap wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
-                                    <p>Focused on enriching everyday living, The Central Park Way embodies an unwavering commitment to delivering exceptional quality and experiences. Our concept-driven luxury residences, complemented by in-house hospitality services, have made Central Park’s developments among the most coveted addresses. Having established a legacy of excellence in real estate, we continue to uphold the values of trust, care, and refined living. Today, our footprint extends across Gurugram, Delhi, and Goa—each destination reflecting our promise of an extraordinary lifestyle.</p>
+                                    <p>Central Park is dedicated to enhancing everyday living through exceptional quality and curated experiences. Our concept-driven luxury residences, paired with in-house hospitality, redefine modern comfort and prestige. With a legacy of trust, care, and refined living, our landmark developments across Gurugram, Delhi, and Goa stand as timeless symbols of extraordinary lifestyles.</p>
                                 </div>
                             </div>
                         </div>
@@ -876,6 +880,44 @@
 
         </div>
         <!-- end Testimonial-->
+
+
+
+        <!-- 🏢 Floor Plan Section -->
+<section class="floorplan-section" id="floorPlans">
+  <div class="floorplan-heading-wrapper">
+    <h2 class="floorplan-heading">Floor Plan</h2>
+    <!-- <h1 class="wow animate__ animate__fadeInUp animated" data-wow-delay="0.2s" id="floor-plan" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp; font-family: Optima;">Floor Plan</h1> -->
+  </div>
+
+  <div class="floorplan-grid">
+    <!-- Plan 1 -->
+    <div class="floorplan-item" data-aos="flip-right">
+      <div class="floorplan-image-wrapper">
+        <img src="./central_park_img/floor_1.png" alt="Floor Plan 1" class="floorplan-image" />
+        <button class="floorplan-btn viewPlan1">View Detail</button>
+      </div>
+    </div>
+
+    <!-- Plan 2 -->
+    <div class="floorplan-item" data-aos="flip-right">
+      <div class="floorplan-image-wrapper">
+        <img src="./central_park_img/floor_1.png" alt="Floor Plan 2" class="floorplan-image" />
+        <button class="floorplan-btn viewPlan2">View Detail</button>
+      </div>
+    </div>
+
+    <!-- Plan 3 -->
+    <div class="floorplan-item" data-aos="flip-right">
+      <div class="floorplan-image-wrapper">
+        <img src="./central_park_img/floor_1.png" alt="Floor Plan 3" class="floorplan-image" />
+        <button class="floorplan-btn viewPlan3">View Detail</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 
 
@@ -1132,8 +1174,28 @@
  const showBtn = document.getElementById('showEnquiryForm');
 const closeBtn = document.getElementById('closeEnquiryForm');
 const overlay = document.getElementById('enquiryOverlay');
+const viewPlan1 = document.querySelector('.viewPlan1');
+const viewPlan2 = document.querySelector('.viewPlan2');
+const viewPlan3 = document.querySelector('.viewPlan3');
 
 showBtn.addEventListener('click', (e) => {
+    console.log("hello")
+  e.preventDefault();
+  overlay.classList.add('active');
+  
+});
+viewPlan1.addEventListener('click', (e) => {
+  e.preventDefault();
+  overlay.classList.add('active');
+  
+});
+viewPlan2.addEventListener('click', (e) => {
+    console.log("hello")
+  e.preventDefault();
+  overlay.classList.add('active');
+  
+});
+viewPlan3.addEventListener('click', (e) => {
     console.log("hello")
   e.preventDefault();
   overlay.classList.add('active');
