@@ -1129,12 +1129,12 @@ mainwrap header .navigation .right .headernav .mainnav ul li a span {
 .mainwrap .hospitalitysection .hospiinner h1 {
 	width: auto;
 	float: left;
-	font-family: Optima;
+	font-family: Freight;
 	font-size: .9rem;
 	color: #3e3e3e;
 	padding-bottom: 40px;
 	letter-spacing: 1.5px;
-	text-transform: uppercase;
+	text-transform: capitalize !important;
 	font-weight: normal;
 }
 
@@ -1159,7 +1159,7 @@ mainwrap header .navigation .right .headernav .mainnav ul li a span {
 }
 
 .mainwrap .hospitalitysection .hospiinner .gridsection .itemg {
-	width: 48.11%;
+	/* width: 48.11%; */
 	float: left
 }
 
@@ -1231,7 +1231,7 @@ mainwrap header .navigation .right .headernav .mainnav ul li a span {
 .mainwrap .hospitalitysection .hospiinner .gridsection .itemg .hostextwrap {
 	width: 100%;
 	float: left;
-	padding-top: 50px
+	padding-top: 10px
 }
 
 .mainwrap .hospitalitysection .hospiinner .gridsection .itemg .hostextwrap p {
@@ -1256,14 +1256,19 @@ mainwrap header .navigation .right .headernav .mainnav ul li a span {
 	float: left;
 	padding: 100px 0 80px;
 	position: absolute;
-	left: 5%
+	left: 5%;
+	text-align: center;
 }
 
 .mainwrap .projectssection .proinner span {
+	display: inline-block;
+	/* ✅ allows proper centering */
+	float: none;
+	/* ✅ removes float that breaks centering */
 	width: auto;
-	float: left;
-	font-family: Optima;
-	font-size: .9rem;
+	/* float: left; */
+	font-family: Freight;
+	font-size: 56px;
 	color: #3e3e3e;
 	padding-bottom: 40px;
 	letter-spacing: 1.5px;
@@ -6156,7 +6161,7 @@ button {
 .corpate h2 {
 	font-family: Freight;
 	font-weight: 400;
-	font-size: 56px;
+	font-size: 40px;
 	color: #3e3e3e;
 	line-height: normal;
 	cursor: pointer
@@ -6165,7 +6170,7 @@ button {
 .corpate .h2 {
 	font-family: Freight;
 	font-weight: 400;
-	font-size: 56px;
+	font-size: 40px;
 	color: #3e3e3e;
 	line-height: normal;
 	cursor: pointer
@@ -7900,7 +7905,7 @@ header.grey .navigation .right .headernav .topsmnav ul li a:hover:after {
 .scrollmagic .cp-caption h1,
 .scrollmagic .cp-caption h4 {
 	color: #fff;
-	font-size: 56px;
+	font-size: 40px;
 	font-weight: 100;
 	letter-spacing: 1px;
 	margin-top: 17px;
@@ -8327,7 +8332,7 @@ header.grey .navigation .right .headernav .topsmnav ul li a:hover:after {
 }
 
 .heading-wrapper .h3 {
-	font-size: 56px;
+	font-size: 40px;
 	margin-bottom: 20px
 }
 
@@ -9621,7 +9626,7 @@ img {
 
 .heading {
 	color: #3e3e3e;
-	font-size: 56px;
+	font-size: 40px;
 	font-weight: 100;
 	letter-spacing: 1px;
 	margin-bottom: 40px;
@@ -9870,9 +9875,15 @@ button.acceptedds {
 /* CSS */
 .cp104-text-container {
 	box-sizing: border-box;
-	max-width: 900px;
+	max-width: 1300px;
 	/* margin: 0 auto; */
 	padding-left: 60px;
+}
+
+.sub_heading_font {
+	font-size: 32px !important;
+	font-weight: 100 !important;
+	text-align: start;
 }
 
 /* Primary typography class */
@@ -9944,9 +9955,25 @@ button.acceptedds {
 
 
 
+@media (min-width: 1400px) {
+	.cp104-text {
+		font-size: 18px;
+		line-height: 30px;
+		padding-bottom: 20px;
+		/* padding-left: 149px; */
+		padding-left: 13px;
+	}
+}
 
 
-
+.mainwrap .projectssection .proinner {
+	width: 90%;
+	float: left;
+	padding: 90px 0;
+	position: absolute;
+	left: 5%;
+	text-align: center;
+}
 
 
 
@@ -9968,7 +9995,7 @@ button.acceptedds {
 /* Section Titles */
 .location-section .section-title {
 	text-align: center;
-	font-size: 32px;
+	font-size: 40px;
 	/* font-weight: 600; */
 	color: #333;
 	margin-bottom: 10px;
@@ -10489,158 +10516,158 @@ button.acceptedds {
 /* plan floor */
 /* 🔹 Section Base */
 .floorplan-section {
-  padding: 80px 20px;
-  background: #fafafa;
-  text-align: center;
-  padding: 60px;
+	padding: 80px 20px;
+	background: #fafafa;
+	text-align: center;
+	padding: 60px;
 }
 
 .floorplan-heading-wrapper {
-  margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 
 .floorplan-heading {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #222;
-  position: relative;
-font-family: Optima !important					;
-font-size: 40px;
-font-weight: 700;
-line-height: normal;
-color: rgb(34, 34, 34);
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: #222;
+	position: relative;
+	font-family: Optima !important;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: normal;
+	color: rgb(34, 34, 34);
 }
 
 .floorplan-heading::after {
-  content: "";
-  width: 80px;
-  height: 4px;
-  background: linear-gradient(90deg, #c49a4a, #e8c97a);
-  display: block;
-  margin: 10px auto 0;
-  border-radius: 3px;
+	content: "";
+	width: 80px;
+	height: 4px;
+	background: linear-gradient(90deg, #c49a4a, #e8c97a);
+	display: block;
+	margin: 10px auto 0;
+	border-radius: 3px;
 }
 
 /* 🔹 Grid Layout */
 .floorplan-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
 }
 
 /* 🔹 Each Item */
 .floorplan-item {
-  position: relative;
-  width: 320px;
-  max-width: 100%;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
+	position: relative;
+	width: 320px;
+	max-width: 100%;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+	transition: transform 0.3s ease;
 }
 
 .floorplan-item:hover {
-  transform: translateY(-6px);
+	transform: translateY(-6px);
 }
 
 /* 🔹 Image Wrapper */
 .floorplan-image-wrapper {
-  position: relative;
-  overflow: hidden;
+	position: relative;
+	overflow: hidden;
 }
 
 .floorplan-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 12px;
-  transition: all 0.4s ease;
-  filter: blur(3px) brightness(80%);
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 12px;
+	transition: all 0.4s ease;
+	filter: blur(3px) brightness(80%);
 }
 
 /* On Hover — Blur reduces slightly */
 .floorplan-item:hover .floorplan-image {
-  filter: blur(2px) brightness(90%);
-  transform: scale(1.05);
+	filter: blur(2px) brightness(90%);
+	transform: scale(1.05);
 }
 
 /* 🔹 Center Button */
 .floorplan-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: linear-gradient(90deg, #c49a4a, #e8c97a);
-  color: #fff;
-  font-weight: 600;
-  border: none;
-  padding: 12px 28px;
-  border-radius: 6px;
-  font-size: 15px;
-  opacity: 0;
-  transition: all 0.4s ease;
-  cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: linear-gradient(90deg, #c49a4a, #e8c97a);
+	color: #fff;
+	font-weight: 600;
+	border: none;
+	padding: 12px 28px;
+	border-radius: 6px;
+	font-size: 15px;
+	opacity: 0;
+	transition: all 0.4s ease;
+	cursor: pointer;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
 }
 
 /* Button visible on hover */
 .floorplan-item .floorplan-btn {
-  opacity: 1;
+	opacity: 1;
 }
 
 /* Hover Effect on Button */
 .floorplan-btn:hover {
-  transform: translate(-50%, -50%) scale(1.05);
-  background: linear-gradient(90deg, #b88a3b, #d8b868);
+	transform: translate(-50%, -50%) scale(1.05);
+	background: linear-gradient(90deg, #b88a3b, #d8b868);
 }
 
 /* 📱 Responsive Design */
 @media (max-width: 992px) {
-  .floorplan-grid {
-    gap: 20px;
-  }
+	.floorplan-grid {
+		gap: 20px;
+	}
 }
 
 @media (max-width: 768px) {
-  .floorplan-heading {
-    font-size: 2rem;
-  }
+	.floorplan-heading {
+		font-size: 2rem;
+	}
 
-  .floorplan-item {
-    width: 90%;
-  }
+	.floorplan-item {
+		width: 90%;
+	}
 
-  .floorplan-btn {
-    font-size: 14px;
-    padding: 10px 22px;
-  }
+	.floorplan-btn {
+		font-size: 14px;
+		padding: 10px 22px;
+	}
 }
 
 
 
 .contact-link {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 28px;
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 28px;
 }
 
 
 .contact-btn-wrap h3 {
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
+	font-size: 20px;
+	font-weight: 600;
+	color: white;
 }
 
 
 .mainwrap .testimonialsection {
-    width: 100%;
-    float: left;
-    position: relative;
-    background: #f8f4f0;
-    margin-bottom: 30px;
+	width: 100%;
+	float: left;
+	position: relative;
+	background: #f8f4f0;
+	margin-bottom: 30px;
 }
 
 @media (max-width: 768px) {
@@ -10711,8 +10738,8 @@ color: rgb(34, 34, 34);
 }
 
 
-@media (max-width:768px){
-	.dispay_none_mob{
+@media (max-width:768px) {
+	.dispay_none_mob {
 		display: none !important;
 	}
 
@@ -10721,54 +10748,56 @@ color: rgb(34, 34, 34);
 
 
 @media (max-width: 768px) {
-    .contact-details-row {
-        flex-direction: column;
-        align-items: start;
-    }
+	.contact-details-row {
+		flex-direction: column;
+		align-items: start;
+	}
 }
 
 @media (max-width: 320px) {
 	.contact-details-row {
-		flex-direction: column ;
-        align-items: start;
-        padding-left: 26px;
-    }
+		flex-direction: column;
+		align-items: start;
+		padding-left: 26px;
+	}
 }
 
 
 
-@media (max-width: 320px) { 
+@media (max-width: 320px) {
 
 	.floorplan-section {
-    padding: 80px 20px;
-    background: #fafafa;
-    text-align: center;
-    padding: 10px 0 !important;
-}
+		padding: 80px 20px;
+		background: #fafafa;
+		text-align: center;
+		padding: 10px 0 !important;
+	}
 }
 
 
 @media (max-width: 320px) {
 	.mainwrap .hospitalitysection .hospiinner .gridsection .itemg .hostextwrap {
 		padding: 30px 0 0px !important;
-    }
-}
-	@media (max-width: 320px) { 
-		.mainwrap .hospitalitysection .hospiinner {
-    width: 100%;
-    float: left;
-    padding-top: 50px  !important;
-    padding-bottom: 0px  !important;
-}
 	}
+}
+
+@media (max-width: 320px) {
+	.mainwrap .hospitalitysection .hospiinner {
+		width: 100%;
+		float: left;
+		padding-top: 50px !important;
+		padding-bottom: 0px !important;
+	}
+}
 
 
 
 
 
-.fa-solid, .fas {
-    font-weight: 900;
-    color: white ;
+.fa-solid,
+.fas {
+	font-weight: 900;
+	color: white;
 }
 
 
@@ -10782,16 +10811,220 @@ color: rgb(34, 34, 34);
 } */
 
 .heading {
-    color: #3e3e3e;
-    /* font-size: 56px; */
-    font-weight: 100;
-    letter-spacing: 1px;
-    /* margin-bottom: 40px; */
-    font-family: Optima;
-    font-weight: 400;
-	font-size: .9rem !important;
-	  color: #3e3e3e !important;
-	  font-family: Optima !important;
-	  
-	   text-transform: uppercase !important;
+	color: #3e3e3e;
+	/* font-size: 56px; */
+	font-weight: 100;
+	letter-spacing: 1px;
+	/* margin-bottom: 40px; */
+	/* font-family: Optima; */
+	font-weight: 400;
+	/* font-size: .9rem !important; */
+	/* color: #3e3e3e !important; */
+	/* font-family: Optima !important; */
+
+	/* text-transform: uppercase !important; */
+
+
+
+
+	font-family: Freight;
+	font-size: 40px;
+	color: #3e3e3e;
+	/* padding-bottom: 40px; */
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	text-align: center
+}
+
+
+/* .text_align_center h1 {
+  text-align: center !important;
+}
+
+
+ .text_align_center_h1 {
+  display: inline-block !important;
+  float: none !important; 
+  font-family:  Freight !important;
+  font-weight: 100 !important;
+  font-size: 56px !important;
+  color: #3e3e3e !important;
+  padding-bottom: 40px !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
+  text-align: center !important;
+} */
+
+/* Parent container ensures centering works */
+.hospiinner {
+	text-align: center;
+	/* ✅ centers all inline or inline-block text */
+}
+
+/* Style for your h1 heading */
+.hospiinner h1 {
+	font-family: Freight;
+	/* ✅ use Freight font */
+	font-size: 42px !important;
+	color: #3e3e3e;
+	padding-bottom: 40px;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	font-weight: 100;
+	text-align: center;
+	/* ✅ ensures text inside h1 is centered */
+	display: inline-block;
+	/* ✅ aligns properly inside text-align center */
+	margin: 0 auto;
+	/* centers block if needed */
+}
+
+.text-size-sub-heading {
+	font-family: Freight;
+	/* ✅ use Freight font */
+	font-size: 40px !important;
+	color: #3e3e3e;
+}
+
+
+.location-section .section-subtitle {
+	text-align: start;
+	/* font-size: 56px; */
+	/* font-weight: 400; */
+	/* line-height: 53px; */
+	/* color: rgb(96, 96, 96); */
+	/* margin-bottom: 50px; */
+	padding-left: 50px;
+	font-family: Freight;
+	font-size: 38px;
+	color: #3e3e3e;
+	padding-bottom: 40px;
+	letter-spacing: 1.5px;
+	line-height: 60px;
+}
+
+
+.mainwrap .hospitalitysection .hospiinner span,
+.mainwrap .hospitalitysection .hospiinner h1 {
+
+	font-size: 32px !important;
+}
+
+
+@media (min-width: 1400px) {
+	.cp104-text {
+		font-size: 18px;
+		line-height: 30px;
+		padding-bottom: 20px;
+		/* padding-left: 149px; */
+	}
+}
+
+
+.new_font_size {
+	font-size: 38px !important;
+	font-weight: 400 !important;
+
+}
+
+.sub_heading_font {
+	font-size: 32px !important;
+	font-weight: 100 !important;
+}
+
+
+.list_loop .h4,
+.list_loop .h4 a {
+	font-family: Freight;
+	font-weight: 400;
+	font-size: 32px;
+	color: #3e3e3e;
+	margin-bottom: 26px;
+	text-transform: capitalize;
+}
+
+
+.innercontact strong {
+	font-size: 20px;
+	color: #000000;
+	letter-spacing: 1px;
+	font-weight: 600;
+	font-family: Optima;
+	display: block;
+	margin-bottom: 15px;
+	font-size: bol;
+}
+
+@media (min-width:1400px) {
+	.hightlight_images_height {
+		height: 70vh;
+	}
+
+}
+
+
+
+.center-content {
+	text-align: center;
+	/* ✅ Centers all text inside */
+	display: flex !important;
+	flex-direction: column !important;
+	justify-content: center !important;
+	align-items: center !important;
+	/* ✅ Centers horizontally */
+}
+
+/* Headings styling */
+.center-content h1,
+.center-content h2 {
+	font-family: 'Freight', serif;
+	color: #3e3e3e;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	margin: 0 auto 20px;
+}
+
+/* Custom sizes */
+.center-content h2 {
+	font-size: 56px;
+	/* WELCOME TO CENTRAL PARK */
+	font-weight: 100;
+}
+
+.center-content h1 {
+	font-size: 36px;
+	/* Homes Fused with Hospitality */
+	font-weight: 100;
+	padding-bottom: 40px;
+}
+
+/* Paragraph alignment */
+.center-content p {
+	/* max-width: 800px !important; */
+	/* ✅ keeps text readable */
+	margin: 0 auto !important;
+	line-height: 1.7 !important;
+	color: #555 !important;
+	font-family: 'Freight', serif !important;
+	font-size: 16px !important;
+}
+
+
+@media (min-width : 1400px) {
+	.this_section_relative {
+		position: relative;
+
+	}
+}
+
+@media (min-width : 1400px) {
+
+	.this_section_absolute {
+		position: absolute;
+
+		top: 250px !important;
+		left: 60px  !important;
+		right: 50px  !important;
+		/* padding: 0 50px; */
+	}
 }
