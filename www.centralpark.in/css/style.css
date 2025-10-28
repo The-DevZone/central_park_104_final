@@ -9969,7 +9969,7 @@ button.acceptedds {
 .location-section .section-title {
 	text-align: center;
 	font-size: 32px;
-	font-weight: 600;
+	/* font-weight: 600; */
 	color: #333;
 	margin-bottom: 10px;
 }
@@ -10761,3 +10761,37 @@ color: rgb(34, 34, 34);
     padding-bottom: 0px  !important;
 }
 	}
+
+
+
+
+
+.fa-solid, .fas {
+    font-weight: 900;
+    color: white ;
+}
+
+
+
+/* .font_all_heading{
+	  font-size: .9rem !important;
+	  color: #3e3e3e !important;
+	  font-family: Optima !important;
+	  
+	   text-transform: uppercase !important;
+} */
+
+.heading {
+    color: #3e3e3e;
+    /* font-size: 56px; */
+    font-weight: 100;
+    letter-spacing: 1px;
+    /* margin-bottom: 40px; */
+    font-family: Optima;
+    font-weight: 400;
+	font-size: .9rem !important;
+	  color: #3e3e3e !important;
+	  font-family: Optima !important;
+	  
+	   text-transform: uppercase !important;
+}
